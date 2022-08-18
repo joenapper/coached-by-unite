@@ -6,7 +6,7 @@ const MeetTheTeam = () => {
   return (
     <Container>
       <SubHeading>Meet the team</SubHeading>
-      <CoachSection name="Jack Parkin">
+      <CoachSection name="Coach Jack">
         <p>
           I've always been into sport but lacked confidence. I was 9 stone 6
           playing football 5 times a week with no structure to life at all.
@@ -26,28 +26,26 @@ const MeetTheTeam = () => {
           you had.
         </p>
       </CoachSection>
-      <CoachSection reversed name="Kevin Choto">
-        <p>Coach and co-founder of Unite Coaching.</p>
-        <br />
-        <p>My specialism is lifestyle coaching:</p>
-        <br />
-        <p>'manipulating your routine to maximise your results.'</p>
-        <br />
-        <p>I work with all clients male and female.</p>
-        <br />
+      <CoachSection reversed name="Coach Kev">
         <p>
-          I enjoy taking on any challenge but demand commitment to the process.
+          Coach and co-founder of Unite Coaching. My specialism is lifestyle
+          coaching: 'manipulating your routine to maximise your results.'
         </p>
         <br />
         <p>
-          My experience and education from young has been science based having
+          I have worked with over 100 clients, male and female, and enjoy taking
+          on any challenge but demand commitment to the process.
+        </p>
+        <br />
+        <p>
+          My experience and education from young has been science-based having
           covered the sciences at A-Level and then onto level 2 and 3 PT/gym
           instructor qualifications.
         </p>
         <br />
         <p>
-          I am myself currently heading into my first competitive season so
-          currently looking to work with serious clients with long term goals.
+          I am, currently heading into my first competitive season so currently
+          looking to work with serious clients with long-term goals.
         </p>
         <br />
         <p>
@@ -55,12 +53,10 @@ const MeetTheTeam = () => {
           gym but in all avenues of life.
         </p>
         <br />
-        <p>I have worked with 100+ clients.</p>
-        <br />
         <p>
-          I have lived and experienced many different carters and lifestyles:
-          student, employed, self employed and now business owner so when it
-          comes to walking the walk finding the balance im sure i can help
+          I have lived and experienced many different careers and lifestyles:
+          student, employed, self-employed and now business owner so when it
+          comes to walking the walk and finding the balance I'm sure I can help
           anyone seriously transform their lifestyle.
         </p>
       </CoachSection>

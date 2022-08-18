@@ -18,7 +18,7 @@ const Hero = () => {
 
         {/* revisit */}
         <div className="mobile-only">
-          <Button>Coaching</Button>
+          <Button>Personalised coaching</Button>
         </div>
       </HeroContent>
     </Wrapper>
