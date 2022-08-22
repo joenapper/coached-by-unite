@@ -4,13 +4,19 @@ import SubHeading from "../../components/SubHeading";
 import { Wrapper, FormGroup, Form, ButtonWrapper, ImageGroup } from "./styles";
 
 const GetInTouch = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(event);
+  };
+
   return (
     <Container>
       <Wrapper>
         <FormGroup>
           <SubHeading>Get in touch</SubHeading>
-          <Form>
-            <input type="text" placeholder="Your Name" />
+          <Form onSubmit={handleSubmit}>
+            <input type="text" placeholder="Your Name" required />
+            <input type="number" placeholder="Your Number" required />
             <input type="text" placeholder="Your Email" />
             <textarea
               name=""
