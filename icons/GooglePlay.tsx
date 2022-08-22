@@ -16,12 +16,12 @@ const GooglePlay = () => {
         y1="183.29"
         y2="166.508"
       >
-        <stop offset="0" stop-color="#00a0ff" />
-        <stop offset=".007" stop-color="#00a1ff" />
-        <stop offset=".26" stop-color="#00beff" />
-        <stop offset=".512" stop-color="#00d2ff" />
-        <stop offset=".76" stop-color="#00dfff" />
-        <stop offset="1" stop-color="#00e3ff" />
+        <stop offset="0" stopColor="#00a0ff" />
+        <stop offset=".007" stopColor="#00a1ff" />
+        <stop offset=".26" stopColor="#00beff" />
+        <stop offset=".512" stopColor="#00d2ff" />
+        <stop offset=".76" stopColor="#00dfff" />
+        <stop offset="1" stopColor="#00e3ff" />
       </linearGradient>
       <linearGradient
         id="b"
@@ -32,10 +32,10 @@ const GooglePlay = () => {
         y1="171.999"
         y2="171.999"
       >
-        <stop offset="0" stop-color="#ffe000" />
-        <stop offset=".409" stop-color="#ffbd00" />
-        <stop offset=".775" stop-color="#ffa500" />
-        <stop offset="1" stop-color="#ff9c00" />
+        <stop offset="0" stopColor="#ffe000" />
+        <stop offset=".409" stopColor="#ffbd00" />
+        <stop offset=".775" stopColor="#ffa500" />
+        <stop offset="1" stopColor="#ff9c00" />
       </linearGradient>
       <linearGradient
         id="c"
@@ -46,8 +46,8 @@ const GooglePlay = () => {
         y1="169.704"
         y2="146.946"
       >
-        <stop offset="0" stop-color="#ff3a44" />
-        <stop offset="1" stop-color="#c31162" />
+        <stop offset="0" stopColor="#ff3a44" />
+        <stop offset="1" stopColor="#c31162" />
       </linearGradient>
       <linearGradient
         id="d"
@@ -58,18 +58,18 @@ const GooglePlay = () => {
         y1="191.824"
         y2="181.661"
       >
-        <stop offset="0" stop-color="#32a071" />
-        <stop offset=".069" stop-color="#2da771" />
-        <stop offset=".476" stop-color="#15cf74" />
-        <stop offset=".801" stop-color="#06e775" />
-        <stop offset="1" stop-color="#00f076" />
+        <stop offset="0" stopColor="#32a071" />
+        <stop offset=".069" stopColor="#2da771" />
+        <stop offset=".476" stopColor="#15cf74" />
+        <stop offset=".801" stopColor="#06e775" />
+        <stop offset="1" stopColor="#00f076" />
       </linearGradient>
       <clipPath id="e">
         <path d="m0 0h124v48h-124z" />
       </clipPath>
       <mask id="f" height="1" maskUnits="userSpaceOnUse" width="1" x="0" y="0">
-        <g clip-path="url(#e)">
-          <path d="m0 0h124v48h-124z" fill-opacity=".2" />
+        <g clipPath="url(#e)">
+          <path d="m0 0h124v48h-124z" fillOpacity=".2" />
         </g>
       </mask>
       <clipPath id="g">
@@ -85,7 +85,7 @@ const GooglePlay = () => {
         patternUnits="userSpaceOnUse"
         width="124"
       >
-        <g clip-path="url(#h)">
+        <g clipPath="url(#h)">
           <path d="m29.625 20.695-11.613-6.597c-.649-.371-1.231-.344-1.606-.008l-.058-.063.058-.058c.375-.336.957-.36 1.606.011l11.687 6.641z" />
         </g>
       </pattern>
@@ -93,8 +93,8 @@ const GooglePlay = () => {
         <path d="m0 0h124v48h-124z" />
       </clipPath>
       <mask id="k" height="1" maskUnits="userSpaceOnUse" width="1" x="0" y="0">
-        <g clip-path="url(#j)">
-          <path d="m0 0h124v48h-124z" fill-opacity=".12" />
+        <g clipPath="url(#j)">
+          <path d="m0 0h124v48h-124z" fillOpacity=".12" />
         </g>
       </mask>
       <clipPath id="l">
@@ -110,7 +110,7 @@ const GooglePlay = () => {
         patternUnits="userSpaceOnUse"
         width="124"
       >
-        <g clip-path="url(#m)">
+        <g clipPath="url(#m)">
           <path d="m16.348 14.145c-.235.246-.371.628-.371 1.125v-.118c0-.496.136-.879.371-1.125l.058.063z" />
         </g>
       </pattern>
@@ -118,8 +118,8 @@ const GooglePlay = () => {
         <path d="m0 0h124v48h-124z" />
       </clipPath>
       <mask id="p" height="1" maskUnits="userSpaceOnUse" width="1" x="0" y="0">
-        <g clip-path="url(#o)">
-          <path d="m0 0h124v48h-124z" fill-opacity=".12" />
+        <g clipPath="url(#o)">
+          <path d="m0 0h124v48h-124z" fillOpacity=".12" />
         </g>
       </mask>
       <clipPath id="q">
@@ -135,7 +135,7 @@ const GooglePlay = () => {
         patternUnits="userSpaceOnUse"
         width="124"
       >
-        <g clip-path="url(#r)">
+        <g clipPath="url(#r)">
           <path d="m33.613 22.961-3.988-2.266.074-.074 3.914 2.223c.559.316.836.734.836 1.156-.047-.379-.332-.75-.836-1.039z" />
         </g>
       </pattern>
@@ -143,8 +143,8 @@ const GooglePlay = () => {
         <path d="m0 0h124v48h-124z" />
       </clipPath>
       <mask id="u" height="1" maskUnits="userSpaceOnUse" width="1" x="0" y="0">
-        <g clip-path="url(#t)">
-          <path d="m0 0h124v48h-124z" fill-opacity=".25" />
+        <g clipPath="url(#t)">
+          <path d="m0 0h124v48h-124z" fillOpacity=".25" />
         </g>
       </mask>
       <clipPath id="v">
@@ -160,7 +160,7 @@ const GooglePlay = () => {
         patternUnits="userSpaceOnUse"
         width="124"
       >
-        <g clip-path="url(#w)">
+        <g clipPath="url(#w)">
           <path
             d="m18.012 33.902 15.601-8.863c.508-.289.789-.66.836-1.039 0 .418-.277.836-.836 1.156l-15.601 8.864c-1.117.632-2.035.105-2.035-1.176v-.114c0 1.278.918 1.805 2.035 1.172z"
             fill="#fff"
@@ -176,8 +176,8 @@ const GooglePlay = () => {
         d="m45.934 16.195c0 .668-.2 1.203-.594 1.602-.453.473-1.043.711-1.766.711a2.426 2.426 0 0 1 -1.765-.719c-.485-.484-.727-1.078-.727-1.789s.242-1.305.727-1.785a2.414 2.414 0 0 1 1.765-.723c.344 0 .672.071.985.203.312.133.566.313.75.535l-.418.422c-.321-.379-.758-.566-1.317-.566-.504 0-.941.176-1.312.531-.367.356-.551.817-.551 1.383s.184 1.031.551 1.387a1.85 1.85 0 0 0 1.312.531c.535 0 .985-.18 1.34-.535.234-.235.367-.559.402-.973h-1.742v-.578h2.324c.028.125.036.246.036.363zm3.687-2.004h-2.183v1.52h1.968v.578h-1.968v1.52h2.183v.589h-2.801v-4.796h2.801zm2.602 4.207h-.618v-4.207h-1.339v-.589h3.297v.589h-1.34zm3.726 0v-4.796h.617v4.796zm3.352 0h-.613v-4.207h-1.344v-.589h3.301v.589h-1.344zm7.586-.617c-.473.485-1.059.727-1.758.727-.703 0-1.289-.242-1.762-.727-.472-.484-.707-1.078-.707-1.781s.235-1.297.707-1.781c.473-.485 1.059-.727 1.762-.727.695 0 1.281.242 1.754.731.476.488.711 1.078.711 1.777 0 .703-.235 1.297-.707 1.781zm-3.063-.402c.356.359.789.539 1.305.539.512 0 .949-.18 1.301-.539.355-.359.535-.82.535-1.379s-.18-1.02-.535-1.379a1.756 1.756 0 0 0 -1.301-.539c-.516 0-.949.18-1.305.539-.355.359-.535.82-.535 1.379s.18 1.02.535 1.379zm4.637 1.019v-4.796h.75l2.332 3.73h.027l-.027-.922v-2.808h.617v4.796h-.644l-2.442-3.914h-.027l.027.926v2.988z"
         fill="#fff"
         stroke="#fff"
-        stroke-miterlimit="10"
-        stroke-width=".16"
+        strokeMiterlimit="10"
+        strokeWidth=".16"
         transform="matrix(1.25299 0 0 1.23841 -9.796 -9.594)"
       />
       <path
@@ -205,22 +205,22 @@ const GooglePlay = () => {
         transform="matrix(1.25299 0 0 -1.23841 -9.796 49.85)"
       />
       <g mask="url(#f)" transform="matrix(1.25299 0 0 -1.23841 -9.796 49.85)">
-        <g clip-path="url(#g)">
+        <g clipPath="url(#g)">
           <path d="m0 0h124v48h-124z" fill="url(#i)" />
         </g>
       </g>
       <g mask="url(#k)" transform="matrix(1.25299 0 0 -1.23841 -9.796 49.85)">
-        <g clip-path="url(#l)">
+        <g clipPath="url(#l)">
           <path d="m0 0h124v48h-124z" fill="url(#n)" />
         </g>
       </g>
       <g mask="url(#p)" transform="matrix(1.25299 0 0 -1.23841 -9.796 49.85)">
-        <g clip-path="url(#q)">
+        <g clipPath="url(#q)">
           <path d="m0 0h124v48h-124z" fill="url(#s)" />
         </g>
       </g>
       <g mask="url(#u)" transform="matrix(1.25299 0 0 -1.23841 -9.796 49.85)">
-        <g clip-path="url(#v)">
+        <g clipPath="url(#v)">
           <path d="m0 0h124v48h-124z" fill="url(#x)" />
         </g>
       </g>
