@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const Form = styled.div`
+export const Form = styled.form`
   display: flex;
   flex-direction: column;
 

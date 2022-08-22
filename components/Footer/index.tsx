@@ -19,13 +19,13 @@ const Footer = () => {
           </li>
           <li>
             <a
-              href="https://www.instagram.com/kevc_unite/"
+              href="https://www.instagram.com/kev_unite/"
               target="_blank"
               rel="noopener noreferrer"
             >
               {/* Refactor with icon */}
               <img src="./assets/images/instagram.png" alt="Instagram" />
-              kevc_unite
+              kev_unite
             </a>
           </li>
         </SocialLinks>
