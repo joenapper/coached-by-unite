@@ -1,10 +1,10 @@
-import { PropsWithChildren } from "react";
 import { Title } from "./styles";
+import { SubHeadingProps } from "./types";
 
-const SubHeading = ({ children }: PropsWithChildren) => {
+const SubHeading = ({ children, noUnderline = false }: SubHeadingProps) => {
   return (
-    <Title>
-      <span className="underline">{children}</span>
+    <Title noUnderline={noUnderline}>
+      <span className={`${noUnderline ? "" : "underline"}`}>{children}</span>
     </Title>
   );
 };

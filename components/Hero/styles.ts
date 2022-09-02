@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { font, fontSize } from "../../styles/theme";
+import { colors, font, fontSize } from "../../styles/theme";
 import Container from "../Container";
 
 export const Wrapper = styled.main`
@@ -33,7 +33,7 @@ export const HeroContent = styled(Container)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: ${colors.white};
   z-index: 1;
   text-align: center;
 

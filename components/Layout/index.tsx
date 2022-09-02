@@ -1,9 +1,15 @@
 import Head from "next/head";
-import Footer from "../Footer";
 import Header from "../Header";
-// import Footer from "./Footer";
+import Footer from "../Footer";
+import { LayoutProps } from "./types";
 
-const Layout = ({ title, keywords, description, children }) => {
+const Layout = ({
+  title,
+  keywords,
+  description,
+  children,
+  isHomepage = false,
+}: LayoutProps) => {
   return (
     <>
       <Head>
@@ -11,7 +17,7 @@ const Layout = ({ title, keywords, description, children }) => {
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
       </Head>
-      <Header />
+      <Header isHomepage={isHomepage} />
       {children}
       <Footer />
     </>

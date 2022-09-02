@@ -17,7 +17,6 @@ export const Wrapper = styled.div<WrapperProps>`
 `;
 
 export const ImageGroup = styled.div`
-  /* height: 100%; */
   display: flex;
   justify-content: space-between;
 

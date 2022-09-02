@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "../../styles/theme";
 import { WrapperProps } from "./types";
 
 export const Wrapper = styled.header<WrapperProps>`
@@ -7,7 +8,8 @@ export const Wrapper = styled.header<WrapperProps>`
   position: fixed;
   z-index: 2;
   transition: background 0.3s ease-in-out;
-  background: ${({ hasScrolled }) => (hasScrolled ? "#000000" : "transparent")};
+  background: ${({ hasScrolled, isHomepage }) =>
+    hasScrolled || !isHomepage ? "#000000" : "transparent"};
 
   .logo {
     position: absolute;
@@ -25,26 +27,19 @@ export const Wrapper = styled.header<WrapperProps>`
     div {
       width: 25px;
       height: 3px;
-      background-color: #fff;
+      background-color: ${colors.white};
       margin: 5px;
       border-radius: 4px;
       transition: all 0.75s ease;
 
       &:first-child {
-        background: #dbbd44;
+        background: ${colors.primary};
       }
 
       &:last-child {
-        background: #dbbd44;
+        background: ${colors.primary};
       }
     }
-  }
-
-  .scrolled {
-    background-color: #010101;
-    opacity: 0.9;
-    color: #fff;
-    transition: 0.5s ease;
   }
 
   .burger-toggle .top-line {
@@ -94,7 +89,7 @@ export const NavBar = styled.nav`
   align-items: center;
   height: 8vh;
   text-transform: uppercase;
-  color: #fff;
+  color: ${colors.white};
   position: relative;
 
   a::after {
@@ -102,7 +97,7 @@ export const NavBar = styled.nav`
     display: block;
     width: 0;
     height: 2px;
-    background-color: #dbbd44;
+    background-color: ${colors.primary};
     transition: width 0.4s;
   }
 
@@ -150,6 +145,7 @@ export const NavMenu = styled.ul`
       li {
         padding: 0;
         opacity: 0;
+        display: contents;
       }
     }
 
@@ -160,7 +156,7 @@ export const NavMenu = styled.ul`
       left: 0;
       width: 0.5rem;
       height: 100%;
-      background-color: #dbbd44;
+      background-color: ${colors.primary};
     }
 
     &.nav-active {

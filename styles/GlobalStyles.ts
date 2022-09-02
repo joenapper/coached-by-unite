@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { colors, font, fontSize } from "./theme";
+import { colors, fontSize } from "./theme";
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -13,7 +13,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    /* color: #ffffff; */
     color: ${colors.black};
     font-family: "Montserrat", sans-serif;
     font-size: ${fontSize.sm};
@@ -46,7 +45,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .underline {
-    border-bottom: 5px solid #dbbd44;
+    border-bottom: 5px solid ${colors.primary};
   }
 
   @media (max-width: 768px) {

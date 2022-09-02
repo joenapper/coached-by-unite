@@ -2,8 +2,9 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import Logo from "../../icons/Logo";
 import { Wrapper, NavBar, NavMenu } from "./styles";
+import { HeaderProps } from "./types";
 
-const Header = () => {
+const Header = ({ isHomepage }: HeaderProps) => {
   const [navActive, setNavActive] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
 
@@ -35,7 +36,7 @@ const Header = () => {
   }, []);
 
   return (
-    <Wrapper hasScrolled={hasScrolled}>
+    <Wrapper hasScrolled={hasScrolled} isHomepage={isHomepage}>
       <NavBar>
         <NavMenu
           className={`${navActive ? "nav-links nav-active" : "nav-links"}`}
@@ -54,7 +55,13 @@ const Header = () => {
             <a href="#contact">Contact form</a>
           </li>
           <li className="mobile-only">
-            <a href="/consultation-form.html">Consultation form</a>
+            <a
+              href="https://i7v1jqli83l.typeform.com/to/WKrk6YhX?typeform-source=www.liinks.co"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Consultation form
+            </a>
           </li>
         </NavMenu>
         <div className="logo">
@@ -64,9 +71,13 @@ const Header = () => {
         </div>
         <ul className="desktop-only">
           <li>
-            <Link href={"/"}>
-              <a>Consultation form</a>
-            </Link>
+            <a
+              href="https://i7v1jqli83l.typeform.com/to/WKrk6YhX?typeform-source=www.liinks.co"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Consultation form
+            </a>
           </li>
         </ul>
         <div

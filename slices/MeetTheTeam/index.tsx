@@ -8,22 +8,41 @@ const MeetTheTeam = () => {
       <SubHeading>Meet the team</SubHeading>
       <CoachSection name="Coach Jack">
         <p>
-          I've always been into sport but lacked confidence. I was 9 stone 6
-          playing football 5 times a week with no structure to life at all.
-          That’s when I started training and it's safe to say I’ve never looked
-          back.
+          Coach and co-founder of Unite Coaching. Looking for purpose,
+          confidence and a change in lifestyle? Im here to help!
         </p>
         <br />
         <p>
-          I immediately fell in love with constantly challenging myself. I
-          wanted to be better every day - getting into good habits, routines and
-          actually making a change in my life.
+          I specialise in physique development. Helping you build and shape a
+          physique that you desire.
         </p>
         <br />
         <p>
-          There’s more to it than just lifting weights, losing fat and looking
-          good. It fires up a mentality in you that you’ll never have thought
-          you had.
+          I work with all clients with all kinds of different goal’s. I’ve
+          worked multiple jobs and have a broad amount of life experience in
+          different fields so can help sculpt routines and habits around all
+          lifestyles. All I ask is for drive, passion and commitment and I will
+          be there every step of the way to help.
+        </p>
+        <br />
+        <p>
+          My passion sparked from been uncomfortable in my own body and wanted
+          to make a change. Week upon week that passion snow balled and led me
+          to where I am today.
+        </p>
+        <br />
+        <p>
+          I’ve completed multiple courses/mentorship’s aswell as my level 2/3
+          pt. I’ve recently completed my first prep/competition and came first
+          at the fit-X expo.
+        </p>
+        <br />
+        <p>
+          I have worked with a broad range of clients covering all bases from
+          diets/preps to lengthy gaining phases. I have learned from some of the
+          best in the industry and have gained plenty of invaluable experience
+          along the way. No matter your goals and aspirations I will map it out
+          and push you to where you want to be.
         </p>
       </CoachSection>
       <CoachSection reversed name="Coach Kev">
