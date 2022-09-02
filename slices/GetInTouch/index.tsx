@@ -10,7 +10,7 @@ const GetInTouch = () => {
   };
 
   return (
-    <Container>
+    <Container id="contact">
       <Wrapper>
         <FormGroup>
           <SubHeading>Get in touch</SubHeading>

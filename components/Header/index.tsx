@@ -41,17 +41,17 @@ const Header = ({ isHomepage }: HeaderProps) => {
         <NavMenu
           className={`${navActive ? "nav-links nav-active" : "nav-links"}`}
         >
-          <li>
+          <li onClick={() => setNavActive(false)}>
             <Link href="/">
               <a>Home</a>
             </Link>
           </li>
-          <li>
+          <li onClick={() => setNavActive(false)}>
             <Link href="/our-journey">
               <a>Our journey</a>
             </Link>
           </li>
-          <li className="mobile-only">
+          <li className="mobile-only" onClick={() => setNavActive(false)}>
             <a href="#contact">Contact form</a>
           </li>
           <li className="mobile-only">
