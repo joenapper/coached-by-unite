@@ -5,7 +5,6 @@ const Hero = () => {
   return (
     <Wrapper className="hero">
       <video
-        controls
         playsInline
         disablePictureInPicture
         autoPlay
