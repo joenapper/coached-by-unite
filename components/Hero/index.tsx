@@ -4,22 +4,38 @@ import { HeroContent, Wrapper } from "./styles";
 const Hero = () => {
   return (
     <Wrapper className="hero">
-      <video autoPlay loop muted poster="./assets/video/video-still.jpg">
-        <source src="./assets/video/jp-video.mp4" type="video/mp4" />
+      <video
+        controls
+        playsInline
+        disablePictureInPicture
+        autoPlay
+        loop
+        muted
+        poster="./assets/video/unite-video-still.jpg"
+      >
+        <source src="./assets/video/unite-promo-video.mp4" type="video/mp4" />
       </video>
       <HeroContent as="div">
         <h1 className="desktop-only underline">Unite Coaching</h1>
         <span className="desktop-only">Take the next step to a better you</span>
 
-        {/* revisit to remove div */}
-        <div className="desktop-only">
+        <a
+          className="desktop-only"
+          href="https://i7v1jqli83l.typeform.com/to/WKrk6YhX?typeform-source=www.liinks.co"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Button>Go ahead</Button>
-        </div>
+        </a>
 
-        {/* revisit */}
-        <div className="mobile-only">
+        <a
+          className="mobile-only"
+          href="https://i7v1jqli83l.typeform.com/to/WKrk6YhX?typeform-source=www.liinks.co"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Button>Personalised coaching</Button>
-        </div>
+        </a>
       </HeroContent>
     </Wrapper>
   );

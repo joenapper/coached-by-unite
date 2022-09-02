@@ -1,4 +1,7 @@
-const Logo = ({ width = 222, height = 295 }) => {
+import { colors } from "../styles/theme";
+import { IconProps } from "./types";
+
+const Logo = ({ width = 222, height = 295 }: IconProps) => {
   return (
     <svg
       width={width}
@@ -11,7 +14,7 @@ const Logo = ({ width = 222, height = 295 }) => {
         fillRule="evenodd"
         clipRule="evenodd"
         d="M110.67 110.56L0.0900879 0V62.55L110.67 173.11L221.25 62.55V0L110.67 110.56Z"
-        fill="#FED600"
+        fill={colors.primary}
       />
       <path
         fillRule="evenodd"

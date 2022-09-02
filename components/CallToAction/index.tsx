@@ -1,4 +1,5 @@
 import Container from "../Container";
+import SubHeading from "../SubHeading";
 import { Wrapper } from "./styles";
 import { CallToActionProps } from "./types";
 
@@ -6,7 +7,7 @@ const CallToAction = ({ title, text, children }: CallToActionProps) => {
   return (
     <Wrapper>
       <Container>
-        <h2>{title}</h2>
+        <SubHeading noUnderline>{title}</SubHeading>
         <p>{text}</p>
         {children}
       </Container>

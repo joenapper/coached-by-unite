@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { font, fontSize } from "../../styles/theme";
+import { colors, fontSize, spacing } from "../../styles/theme";
 
 export const Wrapper = styled.section`
   background-image: radial-gradient(
@@ -22,30 +22,17 @@ export const Wrapper = styled.section`
       transparent 6px
     ),
     linear-gradient(90deg, rgb(33, 33, 33), rgb(33, 33, 33));
-  color: #fff;
-  border-top: 1rem solid #dbbd44;
-  border-bottom: 1rem solid #dbbd44;
+  color: ${colors.white};
+  border-top: 1rem solid ${colors.primary};
+  border-bottom: 1rem solid ${colors.primary};
   text-align: center;
-
-  h2 {
-    font-size: ${fontSize.lg};
-    font-family: ${font.primary};
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-  }
 
   p {
     font-size: ${fontSize.base};
-    margin-bottom: 2rem;
+    margin-bottom: ${spacing.s8};
   }
 
   a:hover {
     letter-spacing: 2px;
-  }
-
-  @media (min-width: 768px) {
-    h2 {
-      font-size: ${fontSize.xxl};
-    }
   }
 `;

@@ -6,7 +6,7 @@ import UniteMobileApp from "../slices/UniteMobileApp";
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout isHomepage>
       <Hero />
       <UniteMobileApp />
       <CallToAction
@@ -14,7 +14,12 @@ export default function Home() {
         text="Take your first step to better health by filling out our free
           consultation form"
       >
-        <a href="/consultation-form.html" className="underline">
+        <a
+          href="https://i7v1jqli83l.typeform.com/to/WKrk6YhX?typeform-source=www.liinks.co"
+          target="_blank"
+          rel="noreferrer"
+          className="underline"
+        >
           Go to form
         </a>
       </CallToAction>

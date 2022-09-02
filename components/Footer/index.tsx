@@ -1,3 +1,4 @@
+import Instagram from "../../icons/Instagram";
 import Container from "../Container";
 import { Wrapper, SocialLinks, Copyright } from "./styles";
 
@@ -12,8 +13,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {/* Refactor with icon */}
-              <img src="./assets/images/instagram.png" alt="Instagram" />
+              <Instagram />
               jackparkin_unite
             </a>
           </li>
@@ -23,8 +23,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {/* Refactor with icon */}
-              <img src="./assets/images/instagram.png" alt="Instagram" />
+              <Instagram />
               kev_unite
             </a>
           </li>
