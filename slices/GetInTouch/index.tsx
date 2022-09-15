@@ -17,13 +17,21 @@ const GetInTouch = () => {
           <Form onSubmit={handleSubmit}>
             <input type="text" placeholder="Your Name" required />
             <input type="number" placeholder="Your Number" required />
-            <input type="text" placeholder="Your Email" />
+            <input type="text" placeholder="Your Email" required />
+            <select required>
+              <option value="" disabled selected hidden>
+                Choose Coach...
+              </option>
+              <option value="jack">Jack | Physique Development</option>
+              <option value="kev">Kev | Lifestyle / Physique</option>
+            </select>
             <textarea
               name=""
               id=""
               cols={30}
               rows={10}
               placeholder="Your Message"
+              required
             />
             <ButtonWrapper>
               <Button>Send</Button>
