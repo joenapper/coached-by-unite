@@ -1,5 +1,6 @@
 import Container from "../../components/Container";
 import SubHeading from "../../components/SubHeading";
+import { appStore, playStore } from "../../config";
 import AppStore from "../../icons/AppStore";
 import GooglePlay from "../../icons/GooglePlay";
 import {
@@ -26,18 +27,10 @@ const UniteMobileApp = () => {
             tablet.
           </p>
           <AppWrapper>
-            <a
-              href="https://apps.apple.com/gb/app/unite-coaching/id1628823840"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={appStore} target="_blank" rel="noreferrer">
               <AppStore />
             </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.cofox.kahunas.UNITECOACHING&gl=GB"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={playStore} target="_blank" rel="noreferrer">
               <GooglePlay />
             </a>
           </AppWrapper>
