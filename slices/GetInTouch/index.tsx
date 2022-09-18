@@ -65,8 +65,8 @@ const GetInTouch = () => {
                 required
                 name="email"
               />
-              <select name="coach" required>
-                <option value="" disabled selected hidden>
+              <select name="coach" required defaultValue={"choose"}>
+                <option value="choose" disabled hidden>
                   Choose Coach...
                 </option>
                 <option value="jack">Jack | Physique Development</option>
