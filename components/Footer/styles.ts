@@ -39,6 +39,7 @@ export const SocialLinks = styled.ul`
   li {
     a {
       background-color: ${colors.primary};
+      color: ${colors.white};
       align-items: center;
       padding: 1rem 2rem;
       display: flex;
@@ -71,6 +72,10 @@ export const Copyright = styled.p`
   width: 100%;
   text-align: center;
   font-size: ${fontSize.sm};
+
+  a {
+    color: ${colors.white};
+  }
 
   @media (min-width: 768px) {
     bottom: -24px;

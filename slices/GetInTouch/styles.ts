@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import { colors, spacing } from "../../styles/theme";
 
+// todo: revisit after looking at react select package
+export const placeholderColor = colors.black;
+
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column-reverse;
@@ -18,10 +21,27 @@ export const Form = styled.form`
   flex-direction: column;
 
   input,
+  select,
   textarea {
     margin-bottom: 1rem;
     border: 1px solid ${colors.primary};
     padding: 1rem;
+
+    &::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: ${placeholderColor};
+      opacity: 1; /* Firefox */
+    }
+
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: ${placeholderColor};
+    }
+
+    &::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: ${placeholderColor};
+    }
   }
 
   textarea {
@@ -36,6 +56,10 @@ export const ButtonWrapper = styled.div`
 
 export const FormGroup = styled.div`
   width: 100%;
+
+  @media (min-width: 1024px) {
+    width: 80%;
+  }
 `;
 
 export const ImageGroup = styled.div`
@@ -48,5 +72,19 @@ export const ImageGroup = styled.div`
     width: calc(50% - 0.5rem);
     object-fit: cover;
     max-height: 525px;
+  }
+`;
+
+export const ImageWrapper = styled.div`
+  display: none;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 130px;
+  }
+
+  @media (min-width: 1024px) {
+    display: block;
   }
 `;

@@ -31,8 +31,4 @@ export const Wrapper = styled.section`
     font-size: ${fontSize.base};
     margin-bottom: ${spacing.s8};
   }
-
-  a:hover {
-    letter-spacing: 2px;
-  }
 `;

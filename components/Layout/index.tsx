@@ -24,10 +24,10 @@ const Layout = ({
   );
 };
 
-// TODO: define better description & keywords for SEO
 Layout.defaultProps = {
   title: "Unite Coaching | Your Online Coach",
-  description: "Your Online Coach....",
+  description:
+    "We help every day people take the next step in their fitness journey.",
   keywords: "Online coach, coaching, online coach rotherham, ",
 };
 

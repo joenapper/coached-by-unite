@@ -1,10 +1,12 @@
 import Container from "../../components/Container";
 import SubHeading from "../../components/SubHeading";
+import { appStore, playStore } from "../../config";
 import AppStore from "../../icons/AppStore";
 import GooglePlay from "../../icons/GooglePlay";
 import {
   FlexContainer,
   ImageWrapper,
+  ContentWrapper,
   SubSubHeading,
   AppWrapper,
 } from "./styles";
@@ -15,9 +17,12 @@ const UniteMobileApp = () => {
       <SubHeading>Unite mobile app</SubHeading>
       <FlexContainer>
         <ImageWrapper>
-          <img src="./assets/images/app-preview.jpg" alt="Unite coaching app" />
+          <img
+            src="./assets/images/app-preview.jpg"
+            alt="Unite coaching app preview"
+          />
         </ImageWrapper>
-        <div>
+        <ContentWrapper>
           <SubSubHeading>Track your progress – on the go</SubSubHeading>
           <p>
             The Unite Coaching mobile app helps you manage your journey from
@@ -26,22 +31,14 @@ const UniteMobileApp = () => {
             tablet.
           </p>
           <AppWrapper>
-            <a
-              href="https://apps.apple.com/gb/app/unite-coaching/id1628823840"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={appStore} target="_blank" rel="noreferrer">
               <AppStore />
             </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.cofox.kahunas.UNITECOACHING&gl=GB"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={playStore} target="_blank" rel="noreferrer">
               <GooglePlay />
             </a>
           </AppWrapper>
-        </div>
+        </ContentWrapper>
       </FlexContainer>
     </Container>
   );

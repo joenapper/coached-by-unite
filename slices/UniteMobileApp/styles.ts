@@ -35,6 +35,12 @@ export const ImageWrapper = styled.div`
   }
 `;
 
+export const ContentWrapper = styled.div`
+  @media (min-width: 1024px) {
+    max-width: 500px;
+  }
+`;
+
 export const SubSubHeading = styled.h3`
   font-weight: 300;
   margin-bottom: ${spacing.s4};
