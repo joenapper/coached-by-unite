@@ -9,6 +9,7 @@ export const Wrapper = styled.button`
   background-color: #222;
   padding: 1rem 2rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 
   span {
     font-weight: 700;
@@ -34,5 +35,14 @@ export const Wrapper = styled.button`
   &:hover:after {
     -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
     transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  }
+
+  &:disabled {
+    pointer-events: none;
+    color: #ccc;
+
+    &::after {
+      background-color: #222;
+    }
   }
 `;

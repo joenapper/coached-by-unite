@@ -19,7 +19,7 @@ export const SuccessModal = ({ onClose, isModalOpen }: ModalProps) => {
           <br />
           One of our coaches will contact you shortly.
         </Text>
-        <Button>Close</Button>
+        <Button onClick={onClose}>Close</Button>
       </Modal>
     </Portal>
   );

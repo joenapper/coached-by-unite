@@ -19,7 +19,7 @@ export const FailModal = ({ onClose, isModalOpen }: ModalProps) => {
           <br />
           Please try again later.
         </Text>
-        <Button>Close</Button>
+        <Button onClick={onClose}>Close</Button>
       </Modal>
     </Portal>
   );
