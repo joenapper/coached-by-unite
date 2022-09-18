@@ -6,6 +6,7 @@ import GooglePlay from "../../icons/GooglePlay";
 import {
   FlexContainer,
   ImageWrapper,
+  ContentWrapper,
   SubSubHeading,
   AppWrapper,
 } from "./styles";
@@ -18,7 +19,7 @@ const UniteMobileApp = () => {
         <ImageWrapper>
           <img src="./assets/images/app-preview.jpg" alt="Unite coaching app" />
         </ImageWrapper>
-        <div>
+        <ContentWrapper>
           <SubSubHeading>Track your progress – on the go</SubSubHeading>
           <p>
             The Unite Coaching mobile app helps you manage your journey from
@@ -34,7 +35,7 @@ const UniteMobileApp = () => {
               <GooglePlay />
             </a>
           </AppWrapper>
-        </div>
+        </ContentWrapper>
       </FlexContainer>
     </Container>
   );
