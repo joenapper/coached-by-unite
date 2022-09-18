@@ -56,6 +56,10 @@ export const ButtonWrapper = styled.div`
 
 export const FormGroup = styled.div`
   width: 100%;
+
+  @media (min-width: 1024px) {
+    width: 80%;
+  }
 `;
 
 export const ImageGroup = styled.div`
