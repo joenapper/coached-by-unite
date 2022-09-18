@@ -70,3 +70,17 @@ export const ImageGroup = styled.div`
     max-height: 525px;
   }
 `;
+
+export const ImageWrapper = styled.div`
+  display: none;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 130px;
+  }
+
+  @media (min-width: 1024px) {
+    display: block;
+  }
+`;

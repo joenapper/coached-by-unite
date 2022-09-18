@@ -3,7 +3,14 @@ import emailjs from "@emailjs/browser";
 import Button from "../../components/Button";
 import Container from "../../components/Container";
 import SubHeading from "../../components/SubHeading";
-import { Wrapper, FormGroup, Form, ButtonWrapper, ImageGroup } from "./styles";
+import {
+  Wrapper,
+  FormGroup,
+  Form,
+  ButtonWrapper,
+  ImageGroup,
+  ImageWrapper,
+} from "./styles";
 import { SuccessModal, FailModal } from "../Modals";
 import Loader from "../../components/Loader";
 
@@ -85,10 +92,15 @@ const GetInTouch = () => {
             </Form>
           </FormGroup>
 
-          <ImageGroup>
-            <img src="./assets/images/jack1.png" alt="" />
-            <img src="./assets/images/jack2.png" alt="" />
-          </ImageGroup>
+          <div>
+            <ImageGroup>
+              <img src="./assets/images/jack1.jpg" alt="" />
+              <img src="./assets/images/kev1.jpg" alt="" />
+            </ImageGroup>
+            <ImageWrapper>
+              <img src="./assets/images/unite1.jpg" alt="" />
+            </ImageWrapper>
+          </div>
         </Wrapper>
       </Container>
 
