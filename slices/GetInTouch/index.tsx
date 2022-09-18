@@ -94,11 +94,17 @@ const GetInTouch = () => {
 
           <div>
             <ImageGroup>
-              <img src="./assets/images/jack1.jpg" alt="" />
-              <img src="./assets/images/kev1.jpg" alt="" />
+              <img
+                src="./assets/images/jack1.jpg"
+                alt="Jack of Unite Coaching"
+              />
+              <img src="./assets/images/kev1.jpg" alt="Kev of Unite Coaching" />
             </ImageGroup>
             <ImageWrapper>
-              <img src="./assets/images/unite1.jpg" alt="" />
+              <img
+                src="./assets/images/unite1.jpg"
+                alt="Jack and Kev of Unite Coaching in the office"
+              />
             </ImageWrapper>
           </div>
         </Wrapper>

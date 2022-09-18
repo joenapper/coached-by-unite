@@ -17,7 +17,10 @@ const UniteMobileApp = () => {
       <SubHeading>Unite mobile app</SubHeading>
       <FlexContainer>
         <ImageWrapper>
-          <img src="./assets/images/app-preview.jpg" alt="Unite coaching app" />
+          <img
+            src="./assets/images/app-preview.jpg"
+            alt="Unite coaching app preview"
+          />
         </ImageWrapper>
         <ContentWrapper>
           <SubSubHeading>Track your progress – on the go</SubSubHeading>
