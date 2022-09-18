@@ -13,7 +13,6 @@ const Modal = ({ id, onClose, isModalOpen = false, children }: ModalProps) => {
     <>
       <Overlay />
       <Wrapper
-        data-testid={id}
         id={id}
         aria-labelledby={`${id}-title`}
         aria-describedby={`${id}-description`}
