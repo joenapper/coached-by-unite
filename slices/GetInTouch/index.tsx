@@ -79,6 +79,7 @@ const GetInTouch = () => {
                 name="email"
               />
               <DropDown
+                name="coach"
                 instanceId="contact-form-select-dropdown"
                 placeholder="Choose Coach..."
                 options={options}

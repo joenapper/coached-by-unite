@@ -3,6 +3,7 @@ import { customStyles } from "./styles";
 import { DropDownProps } from "./types";
 
 const DropDown = ({
+  name,
   instanceId,
   placeholder,
   options,
@@ -10,6 +11,7 @@ const DropDown = ({
 }: DropDownProps) => {
   return (
     <Select
+      name={name}
       instanceId={instanceId}
       placeholder={placeholder}
       options={options}
