@@ -13,6 +13,7 @@ import {
 } from "./styles";
 import { SuccessModal, FailModal } from "../Modals";
 import Loader from "../../components/Loader";
+import DropDown from "../../components/DropDown";
 
 const GetInTouch = () => {
   const form = useRef();
@@ -51,6 +52,11 @@ const GetInTouch = () => {
     e.target.reset();
   };
 
+  const options = [
+    { value: "Jack", label: "Jack | Physique Development" },
+    { value: "Kev", label: "Kev | Lifestyle / Physique" },
+  ];
+
   return (
     <>
       {isLoading && <Loader />}
@@ -72,13 +78,12 @@ const GetInTouch = () => {
                 required
                 name="email"
               />
-              <select name="coach" required defaultValue={"choose"}>
-                <option value="choose" disabled hidden>
-                  Choose Coach...
-                </option>
-                <option value="jack">Jack | Physique Development</option>
-                <option value="kev">Kev | Lifestyle / Physique</option>
-              </select>
+              <DropDown
+                instanceId="contact-form-select-dropdown"
+                placeholder="Choose Coach..."
+                options={options}
+                clearable
+              />
               <textarea
                 name="message"
                 cols={30}
