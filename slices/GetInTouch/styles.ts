@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import { colors, spacing } from "../../styles/theme";
+import { colors, fontSize, spacing } from "../../styles/theme";
 
-// todo: revisit after looking at react select package
-export const placeholderColor = colors.black;
+export const placeholderColor = "grey";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -21,11 +20,11 @@ export const Form = styled.form`
   flex-direction: column;
 
   input,
-  select,
   textarea {
     margin-bottom: 1rem;
     border: 1px solid ${colors.primary};
     padding: 1rem;
+    font-size: ${fontSize.base};
 
     &::placeholder {
       /* Chrome, Firefox, Opera, Safari 10.1+ */
