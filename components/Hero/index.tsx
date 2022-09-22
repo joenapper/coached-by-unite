@@ -1,7 +1,17 @@
+import { useEffect, useState } from "react";
+import { getDownloadLink, getOperatingSystem } from "../../utils";
 import Button from "../Button";
 import { HeroContent, Wrapper } from "./styles";
 
 const Hero = () => {
+  const [downloadLink, setDownloadLink] = useState(null);
+
+  useEffect(() => {
+    const os = getOperatingSystem((global as typeof globalThis).window);
+    const downloadLink = getDownloadLink(os);
+    setDownloadLink(downloadLink);
+  }, [downloadLink]);
+
   return (
     <Wrapper className="hero">
       <video
@@ -20,7 +30,7 @@ const Hero = () => {
 
         <a
           className="desktop-only"
-          href="https://i7v1jqli83l.typeform.com/to/WKrk6YhX?typeform-source=www.liinks.co"
+          href={downloadLink}
           target="_blank"
           rel="noreferrer"
         >
@@ -29,7 +39,7 @@ const Hero = () => {
 
         <a
           className="mobile-only"
-          href="https://i7v1jqli83l.typeform.com/to/WKrk6YhX?typeform-source=www.liinks.co"
+          href={downloadLink}
           target="_blank"
           rel="noreferrer"
         >
