@@ -53,8 +53,8 @@ const GetInTouch = () => {
   };
 
   const options = [
-    { value: "Jack", label: "Jack | Physique Development" },
     { value: "Kev", label: "Kev | Lifestyle / Physique" },
+    { value: "Kimi", label: "Kimi | Male Transformation Coach" },
   ];
 
   return (
@@ -100,8 +100,10 @@ const GetInTouch = () => {
 
           <div>
             <ImageGroup>
+              {/* TODO: Remove inline style */}
               <img
-                src="./assets/images/jack1.jpg"
+                style={{ transform: "scaleX(-1)" }}
+                src="./assets/images/kimi1.jpg"
                 alt="Jack of Unite Coaching"
               />
               <img src="./assets/images/kev1.jpg" alt="Kev of Unite Coaching" />

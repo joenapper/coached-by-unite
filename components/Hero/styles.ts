@@ -17,10 +17,11 @@ export const Wrapper = styled.main`
     background-color: rgba(0, 0, 0, 0.7);
   }
 
-  video {
+  img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: top;
     position: absolute;
   }
 `;

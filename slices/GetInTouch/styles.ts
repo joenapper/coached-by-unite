@@ -80,7 +80,9 @@ export const ImageWrapper = styled.div`
   img {
     width: 100%;
     object-fit: cover;
-    max-height: 130px;
+    /* max-height: 130px; */
+    max-height: 180px;
+    object-position: top;
   }
 
   @media (min-width: 1024px) {

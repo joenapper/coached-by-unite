@@ -9,22 +9,22 @@ const Footer = () => {
         <SocialLinks>
           <li>
             <a
-              href="https://www.instagram.com/jackparkin_unite/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Instagram />
-              jackparkin_unite
-            </a>
-          </li>
-          <li>
-            <a
               href="https://www.instagram.com/kev_unite/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Instagram />
               kev_unite
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/kdtrains/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Instagram />
+              kdtrains
             </a>
           </li>
         </SocialLinks>
@@ -38,7 +38,7 @@ const Footer = () => {
           >
             NapperNetwork
           </a>{" "}
-          | Copyright 2022
+          | Copyright 2022 - 2023
         </Copyright>
       </Container>
     </Wrapper>

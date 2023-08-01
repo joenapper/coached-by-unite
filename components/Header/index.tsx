@@ -1,14 +1,13 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { formLink } from "../../constants/App.constants";
 import Logo from "../../icons/Logo";
-import { getDownloadLink, getOperatingSystem } from "../../utils";
 import { Wrapper, NavBar, NavMenu } from "./styles";
 import { HeaderProps } from "./types";
 
 const Header = ({ isHomepage }: HeaderProps) => {
   const [navActive, setNavActive] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
-  const [downloadLink, setDownloadLink] = useState(null);
 
   // revisit to refactor
   useEffect(() => {
@@ -37,12 +36,6 @@ const Header = ({ isHomepage }: HeaderProps) => {
     return () => window.removeEventListener("scroll", addBackground);
   }, []);
 
-  useEffect(() => {
-    const os = getOperatingSystem((global as typeof globalThis).window);
-    const downloadLink = getDownloadLink(os);
-    setDownloadLink(downloadLink);
-  }, [downloadLink]);
-
   return (
     <Wrapper hasScrolled={hasScrolled} isHomepage={isHomepage}>
       <NavBar>
@@ -59,7 +52,7 @@ const Header = ({ isHomepage }: HeaderProps) => {
             <a href="#contact">Contact form</a>
           </li>
           <li className="mobile-only">
-            <a href={downloadLink} target="_blank" rel="noreferrer">
+            <a href={formLink} target="_blank" rel="noreferrer">
               Consultation form
             </a>
           </li>
@@ -71,7 +64,7 @@ const Header = ({ isHomepage }: HeaderProps) => {
         </div>
         <ul className="desktop-only">
           <li>
-            <a href={downloadLink} target="_blank" rel="noreferrer">
+            <a href={formLink} target="_blank" rel="noreferrer">
               Consultation form
             </a>
           </li>
