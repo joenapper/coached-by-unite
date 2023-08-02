@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { mediaAbove } from "../../constants/media";
 import { colors, fontSize, spacing } from "../../styles/theme";
 
 export const placeholderColor = "grey";
@@ -7,12 +8,12 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column-reverse;
 
-  @media (min-width: 1024px) {
+  ${mediaAbove.desktop(css`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: ${spacing.s4};
-  }
+  `)}
 `;
 
 export const Form = styled.form`
@@ -56,9 +57,9 @@ export const ButtonWrapper = styled.div`
 export const FormGroup = styled.div`
   width: 100%;
 
-  @media (min-width: 1024px) {
+  ${mediaAbove.desktop(css`
     width: 80%;
-  }
+  `)}
 `;
 
 export const ImageGroup = styled.div`
@@ -80,12 +81,11 @@ export const ImageWrapper = styled.div`
   img {
     width: 100%;
     object-fit: cover;
-    /* max-height: 130px; */
     max-height: 180px;
     object-position: top;
   }
 
-  @media (min-width: 1024px) {
+  ${mediaAbove.desktop(css`
     display: block;
-  }
+  `)}
 `;

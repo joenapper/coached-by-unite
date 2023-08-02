@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { mediaBelow } from "../../constants/media";
 import { spacing } from "../../styles/theme";
 
 export const MeetTheTeamWrapper = styled.div`
@@ -7,10 +8,10 @@ export const MeetTheTeamWrapper = styled.div`
   margin: auto;
   justify-content: center;
 
-  @media (max-width: 768px) {
+  ${mediaBelow.tablet(css`
     flex-direction: column;
     align-items: center;
-  }
+  `)}
 `;
 
 export const Image = styled.img`

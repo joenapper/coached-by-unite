@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { mediaAbove, mediaBelow } from "../../constants/media";
 import { spacing } from "../../styles/theme";
 
 export const OnlineCoachingWrapper = styled.div`
@@ -14,12 +15,12 @@ export const Video = styled.video`
 `;
 
 export const FlexContainer = styled.div`
-  @media (min-width: 1024px) {
+  ${mediaAbove.desktop(css`
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: ${spacing.s4};
-  }
+  `)}
 `;
 
 export const VideoWrapper = styled.div`
@@ -33,9 +34,9 @@ export const VideoWrapper = styled.div`
     border-radius: 32px;
   }
 
-  @media (max-width: 768px) {
+  ${mediaBelow.tablet(css`
     margin: auto auto 1rem auto;
-  }
+  `)}
 `;
 
 export const Detail = styled.h3`

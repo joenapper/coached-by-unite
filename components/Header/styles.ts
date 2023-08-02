@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { mediaBelow } from "../../constants/media";
 import { colors } from "../../styles/theme";
 import { WrapperProps } from "./types";
 
@@ -65,7 +66,7 @@ export const Wrapper = styled.header<WrapperProps>`
     }
   }
 
-  @media (max-width: 768px) {
+  ${mediaBelow.tablet(css`
     .logo {
       position: relative;
       z-index: 0;
@@ -80,7 +81,7 @@ export const Wrapper = styled.header<WrapperProps>`
     .nav-active {
       transform: translateX(0);
     }
-  }
+  `)}
 `;
 
 export const NavBar = styled.nav`
@@ -106,13 +107,13 @@ export const NavBar = styled.nav`
     transition: 0.4s;
   }
 
-  @media (max-width: 768px) {
+  ${mediaBelow.tablet(css`
     position: static;
 
     a::after {
       display: none;
     }
-  }
+  `)}
 `;
 
 export const NavMenu = styled.ul`
@@ -125,7 +126,7 @@ export const NavMenu = styled.ul`
     }
   }
 
-  @media (max-width: 768px) {
+  ${mediaBelow.tablet(css`
     &.nav-links {
       position: absolute;
       padding: 14vh 0 16vh 0;
@@ -162,5 +163,5 @@ export const NavMenu = styled.ul`
     &.nav-active {
       transform: translateX(0);
     }
-  }
+  `)}
 `;

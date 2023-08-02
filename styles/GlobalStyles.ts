@@ -1,4 +1,5 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
+import { mediaAbove, mediaBelow } from "../constants/media";
 import { colors, fontSize } from "./theme";
 
 const GlobalStyles = createGlobalStyle`
@@ -17,9 +18,9 @@ const GlobalStyles = createGlobalStyle`
     font-family: "Montserrat", sans-serif;
     font-size: ${fontSize.sm};
     
-    @media (max-width: 768px) {
+    ${mediaBelow.tablet(css`
       font-size: ${fontSize.base};
-    }
+    `)}
   }
 
   ul {
@@ -48,17 +49,18 @@ const GlobalStyles = createGlobalStyle`
     border-bottom: 5px solid ${colors.primary};
   }
 
-  @media (max-width: 768px) {
+  /* TODO: Review if to change tablet to desktop */
+  ${mediaBelow.tablet(css`
     .desktop-only {
-      display: none
+      display: none;
     }
-  }
+  `)}
 
-  @media (min-width: 768px) {
+  ${mediaAbove.tablet(css`
     .mobile-only {
-      display: none
+      display: none;
     }
-  }
+  `)}
 `;
 
 export default GlobalStyles;
