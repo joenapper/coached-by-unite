@@ -47,7 +47,6 @@ const Header = ({ isHomepage }: HeaderProps) => {
               <a>Home</a>
             </Link>
           </li>
-          {/* Our Journey Link here */}
           <li className="mobile-only" onClick={() => setNavActive(false)}>
             <a href="#contact">Contact form</a>
           </li>
