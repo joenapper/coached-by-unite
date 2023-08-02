@@ -1,8 +1,9 @@
 import CallToAction from "../components/CallToAction";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
-import { formLink } from "../constants/App.constants";
+import { formLink, sponsorLink } from "../constants/App.constants";
 import GetInTouch from "../slices/GetInTouch";
+import MeetTheTeam from "../slices/MeetTheTeam";
 import OnlineCoaching from "../slices/OnlineCoaching";
 
 export default function Home() {
@@ -22,6 +23,20 @@ export default function Home() {
           className="underline"
         >
           Go to form
+        </a>
+      </CallToAction>
+      <MeetTheTeam />
+      <CallToAction
+        title="Elite supps"
+        text="Use code UNITE10 for 10% off your order!"
+      >
+        <a
+          href={sponsorLink}
+          target="_blank"
+          rel="noreferrer"
+          className="underline"
+        >
+          Try it now
         </a>
       </CallToAction>
       <GetInTouch />

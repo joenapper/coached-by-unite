@@ -50,6 +50,7 @@ export const SocialLinks = styled.ul`
       text-transform: uppercase;
       transition: 0.2s ease-in-out;
       gap: ${spacing.s4};
+      white-space: nowrap;
 
       &:hover {
         box-shadow: 0 0 5px 3px #010101;
@@ -58,7 +59,8 @@ export const SocialLinks = styled.ul`
     }
   }
 
-  @media (min-width: 768px) {
+  /* TODO: Review to align all media queries */
+  @media (min-width: 1024px) {
     flex-direction: row;
     justify-content: space-around;
   }

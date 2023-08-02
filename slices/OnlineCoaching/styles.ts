@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import { spacing } from "../../styles/theme";
 
+export const OnlineCoachingWrapper = styled.div`
+  max-width: 660px;
+  margin: auto;
+`;
+
 export const Video = styled.video`
   height: 100%;
   width: 100%;
@@ -26,6 +31,10 @@ export const VideoWrapper = styled.div`
 
   video {
     border-radius: 32px;
+  }
+
+  @media (max-width: 768px) {
+    margin: auto auto 1rem auto;
   }
 `;
 

@@ -1,4 +1,6 @@
 import Instagram from "../../icons/Instagram";
+import Calendar from "../../icons/Calendar";
+import Discord from "../../icons/Discord";
 import Container from "../Container";
 import { Wrapper, SocialLinks, Copyright } from "./styles";
 
@@ -25,6 +27,26 @@ const Footer = () => {
             >
               <Instagram />
               kdtrains
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://calendly.com/kev_unite/30min?month=2023-07"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Calendar />
+              Book a call
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://discord.gg/rpXEZae8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Discord />
+              Join the community
             </a>
           </li>
         </SocialLinks>
