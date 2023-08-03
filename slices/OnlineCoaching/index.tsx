@@ -12,7 +12,7 @@ const OnlineCoaching = () => {
   return (
     <Container>
       <OnlineCoachingWrapper>
-        <SubHeading>What is online coaching?</SubHeading>
+        <SubHeading addLineHeight>What is online coaching?</SubHeading>
         <FlexContainer>
           <VideoWrapper>
             <Video

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, font, fontSize } from "../../styles/theme";
+import { colors, font, fontSize, spacing } from "../../styles/theme";
 import Container from "../Container";
 
 export const Wrapper = styled.main`
@@ -48,6 +48,6 @@ export const HeroContent = styled(Container)`
   & > span {
     font-size: ${fontSize.base};
     letter-spacing: 2px;
-    margin: 0.25rem auto 2rem auto;
+    margin: ${spacing.s1} auto ${spacing.s8} auto;
   }
 `;

@@ -15,7 +15,7 @@ export const Video = styled.video`
 `;
 
 export const FlexContainer = styled.div`
-  ${mediaAbove.desktop(css`
+  ${mediaAbove.tablet(css`
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,7 +35,7 @@ export const VideoWrapper = styled.div`
   }
 
   ${mediaBelow.tablet(css`
-    margin: auto auto 1rem auto;
+    margin: auto auto ${spacing.s4} auto;
   `)}
 `;
 

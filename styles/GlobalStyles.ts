@@ -1,6 +1,6 @@
 import { createGlobalStyle, css } from "styled-components";
 import { mediaAbove, mediaBelow } from "../constants/media";
-import { colors, fontSize } from "./theme";
+import { colors, fontSize, spacing } from "./theme";
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -47,6 +47,11 @@ const GlobalStyles = createGlobalStyle`
 
   .underline {
     border-bottom: 5px solid ${colors.primary};
+    /* line-height: ${spacing.s8}; */
+
+    &.line-height {
+      line-height: ${spacing.s8};
+    }
   }
 
   /* TODO: Review if to change tablet to desktop */

@@ -9,27 +9,6 @@ const Header = ({ isHomepage }: HeaderProps) => {
   const [navActive, setNavActive] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
 
-  // revisit to refactor
-  useEffect(() => {
-    const navLinks = document.querySelectorAll(
-      ".nav-links li"
-    ) as NodeListOf<HTMLElement>;
-
-    function linkSlide() {
-      navLinks.forEach((link, index) => {
-        if (link.style.animation) {
-          link.style.animation = "";
-        } else {
-          link.style.animation = `navLinkFade 0.4s ease forwards ${
-            index / 4 + 0.3
-          }s`;
-        }
-      });
-    }
-
-    linkSlide();
-  }, [navActive]);
-
   useEffect(() => {
     const addBackground = () => setHasScrolled(window.scrollY > 100);
     window.addEventListener("scroll", addBackground);

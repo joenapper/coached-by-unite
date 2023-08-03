@@ -22,9 +22,9 @@ export const Form = styled.form`
 
   input,
   textarea {
-    margin-bottom: 1rem;
+    margin-bottom: ${spacing.s4};
     border: 1px solid ${colors.primary};
-    padding: 1rem;
+    padding: ${spacing.s4};
     font-size: ${fontSize.base};
 
     &::placeholder {

@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { mediaBelow } from "../../constants/media";
-import { colors } from "../../styles/theme";
+import { colors, spacing } from "../../styles/theme";
 import { WrapperProps } from "./types";
 
 export const Wrapper = styled.header<WrapperProps>`
@@ -10,7 +10,7 @@ export const Wrapper = styled.header<WrapperProps>`
   z-index: 2;
   transition: background 0.3s ease-in-out;
   background: ${({ hasScrolled, isHomepage }) =>
-    hasScrolled || !isHomepage ? "#000000" : "transparent"};
+    hasScrolled || !isHomepage ? colors.black : "transparent"};
 
   .logo {
     position: absolute;
@@ -53,17 +53,6 @@ export const Wrapper = styled.header<WrapperProps>`
 
   .burger-toggle .btm-line {
     transform: rotate(45deg) translate(-5px, -6px);
-  }
-
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0px);
-    }
   }
 
   ${mediaBelow.tablet(css`
@@ -122,7 +111,7 @@ export const NavMenu = styled.ul`
     justify-content: space-around;
 
     li {
-      padding-right: 2rem;
+      padding-right: ${spacing.s8};
     }
   }
 
