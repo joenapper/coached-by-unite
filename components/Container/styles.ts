@@ -1,15 +1,16 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { mediaAbove } from "../../constants/media";
 
 export const Wrapper = styled.section`
   max-width: 1280px;
   margin: auto;
   padding: 4rem 1rem;
 
-  @media (min-width: 768px) {
+  ${mediaAbove.tablet(css`
     padding: 4rem 10%;
-  }
+  `)}
 
-  @media (min-width: 1024px) {
+  ${mediaAbove.desktop(css`
     padding: 4rem 15%;
-  }
+  `)}
 `;

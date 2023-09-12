@@ -1,47 +1,19 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { formLink } from "../../constants/App.constants";
 import Logo from "../../icons/Logo";
-import { getDownloadLink, getOperatingSystem } from "../../utils";
 import { Wrapper, NavBar, NavMenu } from "./styles";
 import { HeaderProps } from "./types";
 
 const Header = ({ isHomepage }: HeaderProps) => {
   const [navActive, setNavActive] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
-  const [downloadLink, setDownloadLink] = useState(null);
-
-  // revisit to refactor
-  useEffect(() => {
-    const navLinks = document.querySelectorAll(
-      ".nav-links li"
-    ) as NodeListOf<HTMLElement>;
-
-    function linkSlide() {
-      navLinks.forEach((link, index) => {
-        if (link.style.animation) {
-          link.style.animation = "";
-        } else {
-          link.style.animation = `navLinkFade 0.4s ease forwards ${
-            index / 4 + 0.3
-          }s`;
-        }
-      });
-    }
-
-    linkSlide();
-  }, [navActive]);
 
   useEffect(() => {
     const addBackground = () => setHasScrolled(window.scrollY > 100);
     window.addEventListener("scroll", addBackground);
     return () => window.removeEventListener("scroll", addBackground);
   }, []);
-
-  useEffect(() => {
-    const os = getOperatingSystem((global as typeof globalThis).window);
-    const downloadLink = getDownloadLink(os);
-    setDownloadLink(downloadLink);
-  }, [downloadLink]);
 
   return (
     <Wrapper hasScrolled={hasScrolled} isHomepage={isHomepage}>
@@ -54,12 +26,11 @@ const Header = ({ isHomepage }: HeaderProps) => {
               <a>Home</a>
             </Link>
           </li>
-          {/* Our Journey Link here */}
           <li className="mobile-only" onClick={() => setNavActive(false)}>
             <a href="#contact">Contact form</a>
           </li>
           <li className="mobile-only">
-            <a href={downloadLink} target="_blank" rel="noreferrer">
+            <a href={formLink} target="_blank" rel="noreferrer">
               Consultation form
             </a>
           </li>
@@ -71,7 +42,7 @@ const Header = ({ isHomepage }: HeaderProps) => {
         </div>
         <ul className="desktop-only">
           <li>
-            <a href={downloadLink} target="_blank" rel="noreferrer">
+            <a href={formLink} target="_blank" rel="noreferrer">
               Consultation form
             </a>
           </li>

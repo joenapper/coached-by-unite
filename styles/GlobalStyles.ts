@@ -1,5 +1,6 @@
-import { createGlobalStyle } from "styled-components";
-import { colors, fontSize } from "./theme";
+import { createGlobalStyle, css } from "styled-components";
+import { mediaAbove, mediaBelow } from "../constants/media";
+import { colors, fontSize, spacing } from "./theme";
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -17,9 +18,9 @@ const GlobalStyles = createGlobalStyle`
     font-family: "Montserrat", sans-serif;
     font-size: ${fontSize.sm};
     
-    @media (max-width: 768px) {
+    ${mediaBelow.tablet(css`
       font-size: ${fontSize.base};
-    }
+    `)}
   }
 
   ul {
@@ -46,19 +47,25 @@ const GlobalStyles = createGlobalStyle`
 
   .underline {
     border-bottom: 5px solid ${colors.primary};
+    /* line-height: ${spacing.s8}; */
+
+    &.line-height {
+      line-height: ${spacing.s8};
+    }
   }
 
-  @media (max-width: 768px) {
+  /* TODO: Review if to change tablet to desktop */
+  ${mediaBelow.tablet(css`
     .desktop-only {
-      display: none
+      display: none;
     }
-  }
+  `)}
 
-  @media (min-width: 768px) {
+  ${mediaAbove.tablet(css`
     .mobile-only {
-      display: none
+      display: none;
     }
-  }
+  `)}
 `;
 
 export default GlobalStyles;

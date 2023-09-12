@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { mediaAbove } from "../../constants/media";
 import { colors, spacing } from "../../styles/theme";
 
 export const Overlay = styled.div`
@@ -25,7 +26,7 @@ export const Wrapper = styled.div`
   max-height: calc(100vh - 100px);
   z-index: 1;
 
-  @media (min-width: 768px) {
+  ${mediaAbove.tablet(css`
     max-width: 500px;
-  }
+  `)}
 `;

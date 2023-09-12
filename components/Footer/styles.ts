@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { mediaAbove } from "../../constants/media";
 import { colors, font, fontSize, spacing } from "../../styles/theme";
 
 export const Wrapper = styled.footer`
@@ -26,9 +27,9 @@ export const Wrapper = styled.footer`
   border-bottom: 3rem solid ${colors.primary};
   position: relative;
 
-  @media (min-width: 768px) {
+  ${mediaAbove.tablet(css`
     border-bottom: 2rem solid ${colors.primary};
-  }
+  `)}
 `;
 
 export const SocialLinks = styled.ul`
@@ -50,6 +51,7 @@ export const SocialLinks = styled.ul`
       text-transform: uppercase;
       transition: 0.2s ease-in-out;
       gap: ${spacing.s4};
+      white-space: nowrap;
 
       &:hover {
         box-shadow: 0 0 5px 3px #010101;
@@ -58,10 +60,11 @@ export const SocialLinks = styled.ul`
     }
   }
 
-  @media (min-width: 768px) {
+  /* TODO: Review to align all media queries */
+  ${mediaAbove.desktop(css`
     flex-direction: row;
     justify-content: space-around;
-  }
+  `)}
 `;
 
 export const Copyright = styled.p`
@@ -77,7 +80,7 @@ export const Copyright = styled.p`
     color: ${colors.white};
   }
 
-  @media (min-width: 768px) {
+  ${mediaAbove.tablet(css`
     bottom: -24px;
-  }
+  `)}
 `;

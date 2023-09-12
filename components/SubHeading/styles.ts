@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { mediaBelow } from "../../constants/media";
 import { fontSize, spacing } from "../../styles/theme";
 import { TitleProps } from "./types";
 
@@ -12,7 +13,7 @@ export const Title = styled.h2<TitleProps>`
   text-align: center;
   font-size: ${fontSize.xl};
 
-  @media (max-width: 768px) {
+  ${mediaBelow.tablet(css`
     font-size: ${fontSize.lg};
-  }
+  `)}
 `;

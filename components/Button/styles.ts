@@ -6,7 +6,7 @@ export const Wrapper = styled.button`
   overflow: hidden;
   position: relative;
   color: ${colors.white};
-  background-color: #222;
+  background-color: ${colors.secondary};
   padding: 1rem 2rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -42,7 +42,7 @@ export const Wrapper = styled.button`
     color: #ccc;
 
     &::after {
-      background-color: #222;
+      background-color: ${colors.secondary};
     }
   }
 `;

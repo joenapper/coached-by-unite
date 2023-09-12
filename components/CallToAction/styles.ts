@@ -23,8 +23,8 @@ export const Wrapper = styled.section`
     ),
     linear-gradient(90deg, rgb(33, 33, 33), rgb(33, 33, 33));
   color: ${colors.white};
-  border-top: 1rem solid ${colors.primary};
-  border-bottom: 1rem solid ${colors.primary};
+  border-top: ${spacing.s4} solid ${colors.primary};
+  border-bottom: ${spacing.s4} solid ${colors.primary};
   text-align: center;
 
   p {

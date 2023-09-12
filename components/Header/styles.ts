@@ -1,5 +1,6 @@
-import styled from "styled-components";
-import { colors } from "../../styles/theme";
+import styled, { css } from "styled-components";
+import { mediaBelow } from "../../constants/media";
+import { colors, spacing } from "../../styles/theme";
 import { WrapperProps } from "./types";
 
 export const Wrapper = styled.header<WrapperProps>`
@@ -9,7 +10,7 @@ export const Wrapper = styled.header<WrapperProps>`
   z-index: 2;
   transition: background 0.3s ease-in-out;
   background: ${({ hasScrolled, isHomepage }) =>
-    hasScrolled || !isHomepage ? "#000000" : "transparent"};
+    hasScrolled || !isHomepage ? colors.black : "transparent"};
 
   .logo {
     position: absolute;
@@ -54,18 +55,7 @@ export const Wrapper = styled.header<WrapperProps>`
     transform: rotate(45deg) translate(-5px, -6px);
   }
 
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0px);
-    }
-  }
-
-  @media (max-width: 768px) {
+  ${mediaBelow.tablet(css`
     .logo {
       position: relative;
       z-index: 0;
@@ -80,7 +70,7 @@ export const Wrapper = styled.header<WrapperProps>`
     .nav-active {
       transform: translateX(0);
     }
-  }
+  `)}
 `;
 
 export const NavBar = styled.nav`
@@ -106,13 +96,13 @@ export const NavBar = styled.nav`
     transition: 0.4s;
   }
 
-  @media (max-width: 768px) {
+  ${mediaBelow.tablet(css`
     position: static;
 
     a::after {
       display: none;
     }
-  }
+  `)}
 `;
 
 export const NavMenu = styled.ul`
@@ -121,11 +111,11 @@ export const NavMenu = styled.ul`
     justify-content: space-around;
 
     li {
-      padding-right: 2rem;
+      padding-right: ${spacing.s8};
     }
   }
 
-  @media (max-width: 768px) {
+  ${mediaBelow.tablet(css`
     &.nav-links {
       position: absolute;
       padding: 14vh 0 16vh 0;
@@ -162,5 +152,5 @@ export const NavMenu = styled.ul`
     &.nav-active {
       transform: translateX(0);
     }
-  }
+  `)}
 `;
